@@ -37,4 +37,8 @@
     text-align: center;
 
     color: #AAAAAA;
+
+    @include respond (phone) { 
+        margin-bottom: 4rem;
+    }
 }

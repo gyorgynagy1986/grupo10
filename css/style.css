@@ -389,6 +389,11 @@ footer {
   width: 100%;
   display: flex;
   justify-content: space-between; }
+  @media only screen and (max-width: 37.5em) {
+    .sec-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
   .sec-container div:nth-child(1) {
     display: flex;
     align-items: center;
@@ -403,9 +408,23 @@ footer {
       margin-right: 3rem; }
       @media only screen and (max-width: 37.5em) {
         .sec-container div:nth-child(1) img {
-          margin-right: 0rem; } }
-    .sec-container div:nth-child(1) p:not(:last-child) {
-      margin-right: 1rem; }
+          margin-right: 0rem;
+          margin-bottom: 31.5px; } }
+    .sec-container div:nth-child(1) p {
+      font-size: 14px !important; }
+      .sec-container div:nth-child(1) p:not(:last-child) {
+        margin-right: 1rem; }
+      @media only screen and (max-width: 37.5em) {
+        .sec-container div:nth-child(1) p {
+          line-height: 18px !important; }
+          .sec-container div:nth-child(1) p:last-child {
+            margin-bottom: 3rem; }
+          .sec-container div:nth-child(1) p:nth-child(1) {
+            margin-bottom: 11.5px; }
+          .sec-container div:nth-child(1) p:nth-child(2) {
+            margin-bottom: 10px; }
+          .sec-container div:nth-child(1) p:nth-child(4) {
+            transform: rotate(90deg); } }
     @media only screen and (max-width: 64.5em) {
       .sec-container div:nth-child(1) {
         font-size: 14px !important; } }
@@ -448,6 +467,9 @@ footer {
   line-height: 18px;
   text-align: center;
   color: #AAAAAA; }
+  @media only screen and (max-width: 37.5em) {
+    .btn-footer {
+      margin-bottom: 4rem; } }
 
 .nav {
   height: 8rem; }

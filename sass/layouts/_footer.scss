@@ -61,6 +61,13 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    @include respond (phone) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     div {
 
         &:nth-child(1) {
@@ -80,12 +87,36 @@ footer {
                 margin-right: 3rem;
                 @include respond (phone) {
                     margin-right: 0rem;
+                    margin-bottom: 31.5px;
                 }
             }
 
             p {
+                font-size: 14px !important;
+
                 &:not(:last-child) {
                     margin-right: 1rem;
+                }
+
+                @include respond (phone) {
+
+                    line-height: 18px !important;
+
+                   
+                    &:last-child {
+                        margin-bottom: 3rem;
+                    }
+
+                    &:nth-child(1) {
+                    margin-bottom: 11.5px;
+                   }
+                   &:nth-child(2) {
+                    margin-bottom: 10px;
+                   }
+
+                   &:nth-child(4) {
+                    transform: rotate(90deg);
+                   }
                 }
             }
         
