@@ -1,0 +1,88 @@
+//Fonts
+
+$font-primary:'Archivo', sans-serif;
+$font-text:'IBM Plex Sans', sans-serif;
+
+// COLORS
+
+// Text
+
+$color-mian:#202020;
+$color-text:#FFFFFF;
+
+$max-width:100%;
+
+$color-background:$color-mian;
+$color-btn:#666666;
+$color-footer:#000000;
+
+// BREAKPOINTS
+
+@mixin respond($breakpoint) {
+
+    @if $breakpoint == SMphone {
+        @media only screen and (max-width: 22.5em) { @content };    //360px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+
+    @if $breakpoint == tabletPrefix {
+      @media only screen and (max-width: 45.625em) { @content };    //730px
+  }
+
+    @if $breakpoint == phoneMinwidth {
+      @media only screen and (min-width: 37.5em) { @content };    //600px
+  }
+
+    @if $breakpoint == SCtablet {
+        @media only screen and (max-width: 51.25em ) { @content };    //820px
+    }
+
+    @if $breakpoint == tablet {
+        @media only screen and (max-width: 64.5em) { @content };    //1032px
+    }
+
+    @if $breakpoint == custom {
+      @media only screen and (max-width: 73.75em) { @content };    //1180px
+  }
+
+    @if $breakpoint == SCLaptop {
+        @media only screen and (max-width: 80em) { @content };     // 1280px
+    }
+
+    @if $breakpoint == Laptop {
+      @media only screen and (max-width: 90em) { @content };       // 1440px
+  }
+
+    @if $breakpoint == SC1440UP {
+      @media only screen and (min-width: 90em) { @content };       // 1440px
+  }
+
+    @if $breakpoint == SC1600 {
+      @media only screen and (max-width: 100em) { @content };       // 1600px
+  }
+}
+
+
+
+@mixin containerPosition {
+  width: 100%;
+  max-width: $max-width;
+  margin-inline: auto;
+}
+
+
+
+@mixin sectionPadding {
+    padding-left: 5%;
+    padding-right: 5%;
+    
+    @include respond (phone) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+   }
+}
+
+

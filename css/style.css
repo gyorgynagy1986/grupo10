@@ -1,0 +1,369 @@
+.display-none {
+  display: none; }
+
+.mb {
+  margin-bottom: 1rem; }
+
+.mb-2 {
+  margin-bottom: 2rem; }
+
+.mb-3 {
+  margin-bottom: 3rem; }
+
+.mb-4 {
+  margin-bottom: 4rem; }
+
+.mb-5 {
+  margin-bottom: 5rem; }
+
+.mb-6 {
+  margin-bottom: 6rem; }
+
+.mb-7 {
+  margin-bottom: 7rem; }
+
+.mb-8 {
+  margin-bottom: 8rem; }
+
+.mb-9 {
+  margin-bottom: 9rem; }
+
+.mb-10 {
+  margin-bottom: 10rem; }
+
+.mt {
+  margin-top: 1rem; }
+
+.mt-2 {
+  margin-top: 2rem; }
+
+.mt-3 {
+  margin-top: 3rem; }
+
+.mt-4 {
+  margin-top: 4rem; }
+
+.mt-5 {
+  margin-top: 5rem; }
+
+.mt-6 {
+  margin-top: 6rem; }
+
+.mt-7 {
+  margin-top: 7rem; }
+
+.mt-8 {
+  margin-top: 8rem; }
+
+.mt-9 {
+  margin-top: 9rem; }
+
+.mt-10 {
+  margin-top: 10rem; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  -webkit-tap-highlight-color: red;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased; }
+
+*::-webkit-scrollbar {
+  width: .8em;
+  background-color: #fde4cf; }
+
+*::-webkit-scrollbar-thumb {
+  background-color: #202020a6;
+  height: 300px;
+  border-radius: 50px; }
+
+*:focus, *:active {
+  outline: none;
+  box-shadow: none;
+  /* any other relevant styles */ }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      scroll-behavior: auto;
+      overflow-x: hidden; } }
+
+body {
+  font-family: "Archivo", sans-serif;
+  background-color: #202020;
+  color: #FFFFFF; }
+
+li {
+  list-style: none; }
+
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none; }
+
+button {
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  background: unset; }
+
+h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 70px; }
+  @media only screen and (max-width: 64.5em) {
+    h1 {
+      font-size: 40px;
+      line-height: 40px; } }
+  @media only screen and (max-width: 37.5em) {
+    h1 {
+      font-size: 33px;
+      line-height: 33px; } }
+
+h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 120%; }
+  @media only screen and (max-width: 64.5em) {
+    h2 {
+      font-size: 42px; } }
+  @media only screen and (max-width: 37.5em) {
+    h2 {
+      font-size: 28px; } }
+
+h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%; }
+  @media only screen and (max-width: 64.5em) {
+    h3 {
+      font-size: 21px; } }
+  @media only screen and (max-width: 37.5em) {
+    h3 {
+      font-size: 18px; } }
+
+p {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; }
+  @media only screen and (max-width: 64.5em) {
+    p {
+      font-size: 16px; } }
+  @media only screen and (max-width: 37.5em) {
+    p {
+      font-size: 16px; } }
+
+header {
+  width: 100%;
+  max-width: 100%;
+  margin-inline: auto; }
+
+.content-container {
+  height: 100%;
+  min-height: 883px;
+  width: 100%;
+  position: relative;
+  background-image: url(/assets/Desktop/header.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  align-items: flex-end; }
+  .content-container .logo-header {
+    position: absolute;
+    left: 8rem;
+    top: 0; }
+    @media only screen and (max-width: 64.5em) {
+      .content-container .logo-header {
+        left: 4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .content-container .logo-header {
+        display: none; } }
+  @media only screen and (min-width: 90em) {
+    .content-container {
+      background-image: url(/assets/D1440+/header.jpg);
+      background-size: 80%;
+      background-position-y: 0%;
+      min-height: 927px; } }
+  @media only screen and (max-width: 64.5em) {
+    .content-container {
+      background-image: url(/assets/Tablet/header.png); } }
+  @media only screen and (max-width: 37.5em) {
+    .content-container {
+      background-image: url(/assets/Mobile/header.png);
+      background-position: top;
+      background-attachment: fixed;
+      width: 100%;
+      min-height: 760px;
+      display: flex;
+      align-items: flex-end; } }
+
+.text-container {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  top: 0; }
+  @media only screen and (max-width: 64.5em) {
+    .text-container {
+      padding-left: 4rem;
+      padding-right: 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .text-container {
+      padding-left: 3rem;
+      padding-right: 3rem;
+      min-height: 498px;
+      width: 100%; } }
+  .text-container .h1-container {
+    margin-bottom: 3rem;
+    max-width: 866px; }
+    @media only screen and (max-width: 64.5em) {
+      .text-container .h1-container {
+        max-width: 400px; } }
+    @media only screen and (max-width: 37.5em) {
+      .text-container .h1-container {
+        max-width: 100%; } }
+  .text-container .text-container-txt {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 150%;
+    max-width: 694px;
+    margin-bottom: 3rem; }
+    @media only screen and (max-width: 64.5em) {
+      .text-container .text-container-txt {
+        font-size: 22px;
+        max-width: 430px; } }
+    @media only screen and (max-width: 37.5em) {
+      .text-container .text-container-txt {
+        max-width: 100%;
+        font-size: 18px; } }
+  .text-container img {
+    width: 100%;
+    max-width: 465px;
+    height: auto;
+    margin-bottom: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .text-container img {
+        max-width: 280px; } }
+  .text-container .name-ceo {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px; }
+
+main {
+  width: 100%;
+  max-width: 100%;
+  margin-inline: auto;
+  margin-top: 15rem;
+  padding-right: 8rem;
+  overflow: hidden; }
+  @media only screen and (max-width: 64.5em) {
+    main {
+      padding-right: 4rem;
+      margin-top: 9rem; } }
+  @media only screen and (max-width: 37.5em) {
+    main {
+      margin-top: 5rem;
+      padding-left: 0rem;
+      padding-right: 0rem; } }
+
+.content__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .content__container {
+      flex-direction: column; } }
+  .content__container-photoContainer {
+    width: auto;
+    margin-bottom: -.3rem; }
+    @media only screen and (max-width: 64.5em) {
+      .content__container-photoContainer {
+        flex-direction: column; } }
+    @media only screen and (max-width: 37.5em) {
+      .content__container-photoContainer {
+        width: 100%;
+        height: 100%; }
+        .content__container-photoContainer img {
+          object-fit: contain;
+          width: 100%; } }
+  .content__container-textContainer {
+    width: 100%;
+    margin-left: 157px;
+    max-width: 487px; }
+    .content__container-textContainer h2 {
+      margin-bottom: 1rem; }
+    .content__container-textContainer h3 {
+      margin-bottom: 4rem; }
+      @media only screen and (max-width: 37.5em) {
+        .content__container-textContainer h3 {
+          margin-bottom: 2rem; } }
+    .content__container-textContainer p {
+      margin-bottom: 4rem; }
+    @media only screen and (max-width: 64.5em) {
+      .content__container-textContainer {
+        max-width: 370px;
+        padding-top: 3rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        max-width: 100%;
+        margin-left: 50px; } }
+    @media only screen and (max-width: 37.5em) {
+      .content__container-textContainer {
+        max-width: 370px;
+        padding-top: 3rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        max-width: 100%;
+        margin-left: 0; }
+        .content__container-textContainer button {
+          margin-bottom: 5rem; } }
+
+.btn {
+  padding: 10px 60px 10px 20px;
+  width: 153px;
+  height: 47px;
+  background: #333333;
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #FFFFFF;
+  transition: all .2s ease-out; }
+  .btn span {
+    margin-left: 1rem; }
+  .btn:hover {
+    background: #555555; }
+
+.nav {
+  height: 8rem; }
+  @media only screen and (max-width: 64.5em) {
+    .nav {
+      height: 8rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .nav {
+      height: 7rem;
+      padding: 2rem; }
+      .nav img {
+        display: block !important; } }

@@ -1,0 +1,22 @@
+.btn {
+    padding: 10px 60px 10px 20px;
+    width: 153px;
+    height: 47px;
+    background: #333333;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+    transition: all .2s ease-out;
+
+    span {
+        margin-left: 1rem;
+    }
+
+    &:hover {
+        background: #555555;
+    }
+}
+

@@ -1,0 +1,89 @@
+//h1
+
+$fontsize-h1:70px;
+$fontsize-h1-tablet:40px;
+$fontsize-h1-mobile:33px;
+
+h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: $fontsize-h1;
+  line-height: 70px;
+
+  @include respond (tablet) {
+    font-size: $fontsize-h1-tablet;
+    line-height:$fontsize-h1-tablet;
+  }
+
+  @include respond (phone) {
+    font-size: $fontsize-h1-mobile;
+    line-height:$fontsize-h1-mobile;
+  }
+
+}
+
+//H2
+
+$fontsize-h2:58px;
+$fontsize-h2-tablet:42px;
+$fontsize-h2-mobile:28px;
+
+
+h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: $fontsize-h2;
+  line-height: 120%;
+
+  @include respond (tablet) {
+    font-size: $fontsize-h2-tablet;
+  }
+
+  @include respond (phone) {
+    font-size: $fontsize-h2-mobile;
+  }
+
+}
+
+// H3
+
+$fontsize-h3:24px;
+$fontsize-h3-tablet:21px;
+$fontsize-h3-mobile:18px;
+
+h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+
+  @include respond (tablet) {
+    font-size: $fontsize-h3-tablet;
+  }
+
+  @include respond (phone) {
+    font-size: $fontsize-h3-mobile;
+  }
+}
+
+// P 
+
+$fontsize-p: 18px;
+$fontsize-p-tablet: 16px;
+$fontsize-p-mobile: 16px;
+
+p {
+  font-family: $font-text;
+  font-size: $fontsize-p;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  @include respond (tablet) {
+    font-size: $fontsize-p-tablet;
+  }
+
+  @include respond (phone) {
+    font-size: $fontsize-p-mobile;
+  }
+}
