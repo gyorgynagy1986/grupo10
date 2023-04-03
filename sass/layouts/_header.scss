@@ -41,7 +41,6 @@ header {
     }
 
     @include respond (phone) {
-        background-image: url(/assets/Mobile/header.png);
         background-position: top;
         background-attachment: fixed;
         width: 100%;

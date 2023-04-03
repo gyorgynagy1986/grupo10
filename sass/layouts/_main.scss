@@ -19,7 +19,7 @@ main {
         height: 100%;
         display: grid;
         grid-template-columns: 35% 65%;
-
+          overflow: hidden;
         @include respond (phone) {
 
           display: block;

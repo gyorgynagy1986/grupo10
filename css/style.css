@@ -203,7 +203,6 @@ header {
       background-image: url(/assets/Tablet/header.png); } }
   @media only screen and (max-width: 40.5em) {
     .content-container {
-      background-image: url(/assets/Mobile/header.png);
       background-position: top;
       background-attachment: fixed;
       width: 100%;
@@ -286,7 +285,8 @@ main {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 35% 65%; }
+    grid-template-columns: 35% 65%;
+    overflow: hidden; }
     @media only screen and (max-width: 40.5em) {
       main .content__container {
         display: block; } }
