@@ -25,7 +25,7 @@ $color-footer:#000000;
     }
 
     @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
+        @media only screen and (max-width: 40.5em) { @content };    //600px
     }
 
     @if $breakpoint == tabletPrefix {
