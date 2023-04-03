@@ -60,6 +60,10 @@ $color-footer:#000000;
       @media only screen and (min-width: 90em) { @content };       // 1440px
   }
 
+   @if $breakpoint == CUSTOMUP {
+      @media only screen and (min-width: 80em) { @content };       // 1440px
+  }
+
     @if $breakpoint == SC1600 {
       @media only screen and (max-width: 100em) { @content };       // 1600px
   }

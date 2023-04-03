@@ -298,8 +298,14 @@ main {
     .content__container {
       flex-direction: column; } }
   .content__container-photoContainer {
-    width: auto;
+    width: 100%;
     margin-bottom: -.3rem; }
+    @media only screen and (min-width: 80em) {
+      .content__container-photoContainer {
+        width: 40%; } }
+    @media only screen and (min-width: 80em) {
+      .content__container-photoContainer img {
+        width: 100%; } }
     @media only screen and (max-width: 64.5em) {
       .content__container-photoContainer {
         flex-direction: column; } }
@@ -314,6 +320,9 @@ main {
     width: 100%;
     margin-left: 157px;
     max-width: 487px; }
+    @media only screen and (min-width: 80em) {
+      .content__container-textContainer {
+        width: 60%; } }
     .content__container-textContainer h2 {
       margin-bottom: 1rem; }
     .content__container-textContainer h3 {

@@ -32,8 +32,21 @@ main {
     }
 
     &-photoContainer {
-        width: auto;
+        width: 100%;
         margin-bottom: -.3rem;
+
+        @include respond (CUSTOMUP) {
+            width: 40%;
+
+        }
+
+        @include respond (CUSTOMUP) {
+            img {
+                width: 100%;
+            }
+        }
+
+      
 
         @include respond (tablet) {
             flex-direction: column;
@@ -56,6 +69,11 @@ main {
         width: 100%;
         margin-left: 157px;
         max-width: 487px;
+        
+        @include respond (CUSTOMUP) {
+            width: 60%;
+
+        }
 
         h2 {
             margin-bottom: 1rem;
