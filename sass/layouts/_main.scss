@@ -21,9 +21,11 @@ main {
         grid-template-columns: 35% 65%;
 
         @include respond (phone) {
-          height: 682px;
-          grid-template-columns: 100%;
-          grid-template-rows: 1fr 1fr;
+
+          display: block;
+
+        // grid-template-columns: 100%;
+        // grid-template-rows: 1fr 1fr;
       }
 
         .ctr {
@@ -64,6 +66,16 @@ main {
         display: block;
         background-position: center;
         background-size: cover;
+
+        @include respond (phone) {
+          height: 340px;
+
+     }
+
+        @include respond (SC1440UP) {
+          max-width: 800px;
+     }
+
    }
 
    .content__container-textContainer {
@@ -74,7 +86,6 @@ main {
 
         @include respond (SC1440UP) {
           max-width: 800px;
-
      }
 
      @include respond (phone) {
@@ -84,8 +95,6 @@ main {
           padding-right: 3rem;
           max-width: 100%;
           margin-left: 0;
-
-
       }
 
           h2 {

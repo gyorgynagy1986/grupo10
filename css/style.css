@@ -207,7 +207,7 @@ header {
       background-position: top;
       background-attachment: fixed;
       width: 100%;
-      min-height: 760px;
+      min-height: 671px;
       display: flex;
       align-items: flex-end; } }
 
@@ -289,9 +289,7 @@ main {
     grid-template-columns: 35% 65%; }
     @media only screen and (max-width: 40.5em) {
       main .content__container {
-        height: 682px;
-        grid-template-columns: 100%;
-        grid-template-rows: 1fr 1fr; } }
+        display: block; } }
     main .content__container .ctr {
       width: 100%;
       display: flex;
@@ -312,6 +310,12 @@ main {
     display: block;
     background-position: center;
     background-size: cover; }
+    @media only screen and (max-width: 40.5em) {
+      main .content__container-photoContainer {
+        height: 340px; } }
+    @media only screen and (min-width: 90em) {
+      main .content__container-photoContainer {
+        max-width: 800px; } }
   main .content__container-textContainer {
     width: 100%;
     max-width: 500px;
