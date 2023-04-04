@@ -20,3 +20,25 @@
     }
 }
 
+
+.btn-footer {
+    width: 124px;
+    height: 38px;
+    
+
+    background: #222222;
+
+    text-transform: none;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #AAAAAA;
+
+    @include respond (phone) { 
+        margin-bottom: 4rem;
+    }
+}

@@ -9,7 +9,7 @@ const sr = ScrollReveal({
 sr.reveal(`.sfr`, {distance: '100px', origin: 'right', duration: 1800, delay: 50,} )
 
 
-const svgCrab = document.querySelector('.text-container');
+const text = document.querySelector('.text-container');
 
 
 const mediaQuery = window.matchMedia('(min-width: 1200px)');
@@ -20,13 +20,15 @@ function handleMediaQueryChange(event) {
 
   if (event.matches) {
 
-svgCrab.style.top = `${window.pageYOffset - 50}px`
+  text.style.top = 0;
+
+  console.log(window.pageYOffset)
     
    
    window.addEventListener('scroll', function() {
        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
        
-       svgCrab.style.top = `${scrollTop * 4 / 26  - 50}px`
+       text.style.top = `${scrollTop * 20 / 26  - window.pageYOffset}px`
    
      });
   } else {

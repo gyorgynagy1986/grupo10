@@ -91,7 +91,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 40.5em) {
     html {
       scroll-behavior: auto;
       overflow-x: hidden; } }
@@ -124,7 +124,7 @@ h1 {
     h1 {
       font-size: 40px;
       line-height: 40px; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 40.5em) {
     h1 {
       font-size: 33px;
       line-height: 33px; } }
@@ -137,7 +137,7 @@ h2 {
   @media only screen and (max-width: 64.5em) {
     h2 {
       font-size: 42px; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 40.5em) {
     h2 {
       font-size: 28px; } }
 
@@ -149,7 +149,7 @@ h3 {
   @media only screen and (max-width: 64.5em) {
     h3 {
       font-size: 21px; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 40.5em) {
     h3 {
       font-size: 18px; } }
 
@@ -162,7 +162,7 @@ p {
   @media only screen and (max-width: 64.5em) {
     p {
       font-size: 16px; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 40.5em) {
     p {
       font-size: 16px; } }
 
@@ -189,7 +189,7 @@ header {
     @media only screen and (max-width: 64.5em) {
       .content-container .logo-header {
         left: 4rem; } }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 40.5em) {
       .content-container .logo-header {
         display: none; } }
   @media only screen and (min-width: 90em) {
@@ -201,9 +201,8 @@ header {
   @media only screen and (max-width: 64.5em) {
     .content-container {
       background-image: url(/assets/Tablet/header.png); } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 40.5em) {
     .content-container {
-      background-image: url(/assets/Mobile/header.png);
       background-position: top;
       background-attachment: fixed;
       width: 100%;
@@ -223,7 +222,7 @@ header {
     .text-container {
       padding-left: 4rem;
       padding-right: 4rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 40.5em) {
     .text-container {
       padding-left: 3rem;
       padding-right: 3rem;
@@ -235,7 +234,7 @@ header {
     @media only screen and (max-width: 64.5em) {
       .text-container .h1-container {
         max-width: 400px; } }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 40.5em) {
       .text-container .h1-container {
         max-width: 100%; } }
   .text-container .text-container-txt {
@@ -250,7 +249,7 @@ header {
       .text-container .text-container-txt {
         font-size: 22px;
         max-width: 430px; } }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 40.5em) {
       .text-container .text-container-txt {
         max-width: 100%;
         font-size: 18px; } }
@@ -259,7 +258,7 @@ header {
     max-width: 465px;
     height: auto;
     margin-bottom: 1rem; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 40.5em) {
       .text-container img {
         max-width: 280px; } }
   .text-container .name-ceo {
@@ -270,74 +269,174 @@ header {
     line-height: 20px; }
 
 main {
-  width: 100%;
-  max-width: 100%;
-  margin-inline: auto;
-  margin-top: 15rem;
-  padding-right: 8rem;
-  overflow: hidden; }
+  padding-bottom: 15rem;
+  padding-top: 15rem; }
   @media only screen and (max-width: 64.5em) {
     main {
-      padding-right: 4rem;
-      margin-top: 9rem; } }
-  @media only screen and (max-width: 37.5em) {
+      padding-bottom: 9rem;
+      padding-top: 9rem; } }
+  @media only screen and (max-width: 40.5em) {
     main {
-      margin-top: 5rem;
+      padding-top: 5rem;
       padding-left: 0rem;
-      padding-right: 0rem; } }
-
-.content__container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center; }
-  @media only screen and (max-width: 37.5em) {
-    .content__container {
-      flex-direction: column; } }
-  .content__container-photoContainer {
-    width: auto;
-    margin-bottom: -.3rem; }
-    @media only screen and (max-width: 64.5em) {
-      .content__container-photoContainer {
-        flex-direction: column; } }
-    @media only screen and (max-width: 37.5em) {
-      .content__container-photoContainer {
-        width: 100%;
-        height: 100%; }
-        .content__container-photoContainer img {
-          object-fit: contain;
-          width: 100%; } }
-  .content__container-textContainer {
+      padding-right: 0rem;
+      padding-bottom: 0rem; } }
+  main .content__container {
     width: 100%;
-    margin-left: 157px;
-    max-width: 487px; }
-    .content__container-textContainer h2 {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    overflow: hidden; }
+    @media only screen and (max-width: 40.5em) {
+      main .content__container {
+        display: block; } }
+    main .content__container .ctr {
+      width: 100%;
+      display: flex;
+      justify-content: space-around; }
+      @media only screen and (max-width: 40.5em) {
+        main .content__container .ctr {
+          justify-content: unset; } }
+  main .photo-1 {
+    background: url(/assets/Desktop/1.png); }
+  main .photo-2 {
+    background: url(/assets/Desktop/2.png); }
+  main .photo-3 {
+    background: url(/assets/Desktop/3.png); }
+  main .photo-4 {
+    background: url(/assets/Desktop/4.png); }
+  main .content__container-photoContainer {
+    height: 100%;
+    display: block;
+    background-position: center;
+    background-size: cover; }
+    @media only screen and (max-width: 40.5em) {
+      main .content__container-photoContainer {
+        height: 340px; } }
+    @media only screen and (min-width: 90em) {
+      main .content__container-photoContainer {
+        max-width: 800px; } }
+  main .content__container-textContainer {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    padding: 6rem; }
+    @media only screen and (min-width: 90em) {
+      main .content__container-textContainer {
+        max-width: 800px; } }
+    @media only screen and (max-width: 40.5em) {
+      main .content__container-textContainer {
+        max-width: 370px;
+        padding-top: 3rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        max-width: 100%;
+        margin-left: 0; } }
+    main .content__container-textContainer h2 {
       margin-bottom: 1rem; }
-    .content__container-textContainer h3 {
+    main .content__container-textContainer h3 {
       margin-bottom: 4rem; }
-      @media only screen and (max-width: 37.5em) {
-        .content__container-textContainer h3 {
+      @media only screen and (max-width: 40.5em) {
+        main .content__container-textContainer h3 {
           margin-bottom: 2rem; } }
-    .content__container-textContainer p {
+    main .content__container-textContainer p {
       margin-bottom: 4rem; }
+
+footer {
+  background-color: black;
+  min-height: 311px;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-top: 5.8rem; }
+  @media only screen and (max-width: 64.5em) {
+    footer {
+      padding-left: 4rem;
+      padding-right: 4rem; } }
+  @media only screen and (max-width: 40.5em) {
+    footer {
+      padding-top: 2rem;
+      padding-left: 2rem;
+      padding-right: 2rem; } }
+
+.main-container {
+  width: 100%;
+  margin-bottom: 58.5px; }
+  @media only screen and (max-width: 40.5em) {
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px; } }
+  .main-container h3 {
+    margin-bottom: 2rem; }
     @media only screen and (max-width: 64.5em) {
-      .content__container-textContainer {
-        max-width: 370px;
-        padding-top: 3rem;
-        padding-left: 3rem;
-        padding-right: 3rem;
-        max-width: 100%;
-        margin-left: 50px; } }
-    @media only screen and (max-width: 37.5em) {
-      .content__container-textContainer {
-        max-width: 370px;
-        padding-top: 3rem;
-        padding-left: 3rem;
-        padding-right: 3rem;
-        max-width: 100%;
-        margin-left: 0; }
-        .content__container-textContainer button {
-          margin-bottom: 5rem; } }
+      .main-container h3 {
+        font-size: 24px !important; } }
+    @media only screen and (max-width: 40.5em) {
+      .main-container h3 {
+        font-size: 24px !important; } }
+  .main-container p:not(:last-child) {
+    margin-bottom: .5rem; }
+  @media only screen and (max-width: 64.5em) {
+    .main-container p {
+      font-size: 18px !important; } }
+  @media only screen and (max-width: 40.5em) {
+    .main-container p {
+      font-size: 18px !important; } }
+
+.sec-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+  @media only screen and (max-width: 40.5em) {
+    .sec-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+  .sec-container div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #AAAAAA; }
+    .sec-container div:nth-child(1) img {
+      margin-right: 3rem; }
+      @media only screen and (max-width: 40.5em) {
+        .sec-container div:nth-child(1) img {
+          margin-right: 0rem;
+          margin-bottom: 31.5px; } }
+    .sec-container div:nth-child(1) p {
+      font-size: 14px !important; }
+      .sec-container div:nth-child(1) p:not(:last-child) {
+        margin-right: 1rem; }
+      @media only screen and (max-width: 40.5em) {
+        .sec-container div:nth-child(1) p {
+          line-height: 18px !important; }
+          .sec-container div:nth-child(1) p:last-child {
+            margin-bottom: 3rem; }
+          .sec-container div:nth-child(1) p:nth-child(1) {
+            margin-bottom: 11.5px; }
+          .sec-container div:nth-child(1) p:nth-child(2) {
+            margin-bottom: 10px; }
+          .sec-container div:nth-child(1) p:nth-child(4) {
+            transform: rotate(90deg); } }
+    @media only screen and (max-width: 64.5em) {
+      .sec-container div:nth-child(1) {
+        font-size: 14px !important; } }
+    @media only screen and (max-width: 40.5em) {
+      .sec-container div:nth-child(1) {
+        font-size: 14px !important;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .sec-container div:nth-child(1) p:not(:last-child) {
+          margin-right: 0rem; } }
 
 .btn {
   padding: 10px 60px 10px 20px;
@@ -356,12 +455,28 @@ main {
   .btn:hover {
     background: #555555; }
 
+.btn-footer {
+  width: 124px;
+  height: 38px;
+  background: #222222;
+  text-transform: none;
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #AAAAAA; }
+  @media only screen and (max-width: 40.5em) {
+    .btn-footer {
+      margin-bottom: 4rem; } }
+
 .nav {
   height: 8rem; }
   @media only screen and (max-width: 64.5em) {
     .nav {
       height: 8rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 40.5em) {
     .nav {
       height: 7rem;
       padding: 2rem; }

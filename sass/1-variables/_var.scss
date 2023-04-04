@@ -25,7 +25,7 @@ $color-footer:#000000;
     }
 
     @if $breakpoint == phone {
-        @media only screen and (max-width: 37.5em) { @content };    //600px
+        @media only screen and (max-width: 40.5em) { @content };    //600px
     }
 
     @if $breakpoint == tabletPrefix {
@@ -58,6 +58,10 @@ $color-footer:#000000;
 
     @if $breakpoint == SC1440UP {
       @media only screen and (min-width: 90em) { @content };       // 1440px
+  }
+
+   @if $breakpoint == CUSTOMUP {
+      @media only screen and (min-width: 80em) { @content };       // 1440px
   }
 
     @if $breakpoint == SC1600 {
