@@ -9,7 +9,7 @@
     font-size: 18px;
     line-height: 150%;
     color: #FFFFFF;
-    transition: all .2s ease-out;
+    transition: all .1s ease-out;
 
     span {
         margin-left: 1rem;
@@ -35,10 +35,16 @@
     font-size: 14px;
     line-height: 18px;
     text-align: center;
-
     color: #AAAAAA;
+    transition: all .1s ease-out;
 
     @include respond (phone) { 
         margin-bottom: 4rem;
     }
+
+    &:hover {
+        background: #333333;
+
+    }
+
 }

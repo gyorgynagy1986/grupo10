@@ -24,12 +24,12 @@ $color-footer:#000000;
         @media only screen and (max-width: 22.5em) { @content };    //360px
     }
 
-    @if $breakpoint == phone {
-        @media only screen and (max-width: 40.5em) { @content };    //600px
+    @if $breakpoint == phone600 {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
     }
 
-    @if $breakpoint == tabletPrefix {
-      @media only screen and (max-width: 45.625em) { @content };    //730px
+    @if $breakpoint == phone {
+      @media only screen and (max-width: 47.9375em) { @content };    //730px
   }
 
     @if $breakpoint == phoneMinwidth {
@@ -89,4 +89,5 @@ $color-footer:#000000;
    }
 }
 
-
+.display-none {
+  display: none; }
