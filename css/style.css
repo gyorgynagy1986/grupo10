@@ -91,7 +91,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth; }
-  @media only screen and (max-width: 40.5em) {
+  @media only screen and (max-width: 47.9375em) {
     html {
       scroll-behavior: auto;
       overflow-x: hidden; } }
@@ -124,7 +124,7 @@ h1 {
     h1 {
       font-size: 40px;
       line-height: 40px; } }
-  @media only screen and (max-width: 40.5em) {
+  @media only screen and (max-width: 47.9375em) {
     h1 {
       font-size: 33px;
       line-height: 33px; } }
@@ -137,7 +137,7 @@ h2 {
   @media only screen and (max-width: 64.5em) {
     h2 {
       font-size: 42px; } }
-  @media only screen and (max-width: 40.5em) {
+  @media only screen and (max-width: 47.9375em) {
     h2 {
       font-size: 28px; } }
 
@@ -149,7 +149,7 @@ h3 {
   @media only screen and (max-width: 64.5em) {
     h3 {
       font-size: 21px; } }
-  @media only screen and (max-width: 40.5em) {
+  @media only screen and (max-width: 47.9375em) {
     h3 {
       font-size: 18px; } }
 
@@ -162,7 +162,7 @@ p {
   @media only screen and (max-width: 64.5em) {
     p {
       font-size: 16px; } }
-  @media only screen and (max-width: 40.5em) {
+  @media only screen and (max-width: 47.9375em) {
     p {
       font-size: 16px; } }
 
@@ -189,7 +189,7 @@ header {
     @media only screen and (max-width: 64.5em) {
       .content-container .logo-header {
         left: 4rem; } }
-    @media only screen and (max-width: 40.5em) {
+    @media only screen and (max-width: 51.25em) {
       .content-container .logo-header {
         display: none; } }
   @media only screen and (min-width: 90em) {
@@ -201,14 +201,18 @@ header {
   @media only screen and (max-width: 64.5em) {
     .content-container {
       background-image: url(/assets/Tablet/header.png); } }
-  @media only screen and (max-width: 40.5em) {
+  @media only screen and (max-width: 47.9375em) {
     .content-container {
       background-position: top;
       background-attachment: fixed;
+      background-size: cover;
       width: 100%;
       min-height: 760px;
       display: flex;
       align-items: flex-end; } }
+  @media only screen and (max-width: 37.5em) {
+    .content-container {
+      background-size: contain; } }
 
 .text-container {
   display: flex;
@@ -222,7 +226,7 @@ header {
     .text-container {
       padding-left: 4rem;
       padding-right: 4rem; } }
-  @media only screen and (max-width: 40.5em) {
+  @media only screen and (max-width: 47.9375em) {
     .text-container {
       padding-left: 3rem;
       padding-right: 3rem;
@@ -234,7 +238,7 @@ header {
     @media only screen and (max-width: 64.5em) {
       .text-container .h1-container {
         max-width: 400px; } }
-    @media only screen and (max-width: 40.5em) {
+    @media only screen and (max-width: 47.9375em) {
       .text-container .h1-container {
         max-width: 100%; } }
   .text-container .text-container-txt {
@@ -249,7 +253,7 @@ header {
       .text-container .text-container-txt {
         font-size: 22px;
         max-width: 430px; } }
-    @media only screen and (max-width: 40.5em) {
+    @media only screen and (max-width: 47.9375em) {
       .text-container .text-container-txt {
         max-width: 100%;
         font-size: 18px; } }
@@ -258,7 +262,7 @@ header {
     max-width: 465px;
     height: auto;
     margin-bottom: 1rem; }
-    @media only screen and (max-width: 40.5em) {
+    @media only screen and (max-width: 47.9375em) {
       .text-container img {
         max-width: 280px; } }
   .text-container .name-ceo {
@@ -275,7 +279,7 @@ main {
     main {
       padding-bottom: 9rem;
       padding-top: 9rem; } }
-  @media only screen and (max-width: 40.5em) {
+  @media only screen and (max-width: 47.9375em) {
     main {
       padding-top: 5rem;
       padding-left: 0rem;
@@ -287,14 +291,14 @@ main {
     display: grid;
     grid-template-columns: 35% 65%;
     overflow: hidden; }
-    @media only screen and (max-width: 40.5em) {
+    @media only screen and (max-width: 47.9375em) {
       main .content__container {
         display: block; } }
     main .content__container .ctr {
       width: 100%;
       display: flex;
       justify-content: space-around; }
-      @media only screen and (max-width: 40.5em) {
+      @media only screen and (max-width: 47.9375em) {
         main .content__container .ctr {
           justify-content: unset; } }
   main .photo-1 {
@@ -310,7 +314,7 @@ main {
     display: block;
     background-position: center;
     background-size: cover; }
-    @media only screen and (max-width: 40.5em) {
+    @media only screen and (max-width: 47.9375em) {
       main .content__container-photoContainer {
         height: 340px; } }
     @media only screen and (min-width: 90em) {
@@ -324,7 +328,7 @@ main {
     @media only screen and (min-width: 90em) {
       main .content__container-textContainer {
         max-width: 800px; } }
-    @media only screen and (max-width: 40.5em) {
+    @media only screen and (max-width: 47.9375em) {
       main .content__container-textContainer {
         max-width: 370px;
         padding-top: 3rem;
@@ -336,7 +340,7 @@ main {
       margin-bottom: 1rem; }
     main .content__container-textContainer h3 {
       margin-bottom: 4rem; }
-      @media only screen and (max-width: 40.5em) {
+      @media only screen and (max-width: 47.9375em) {
         main .content__container-textContainer h3 {
           margin-bottom: 2rem; } }
     main .content__container-textContainer p {
@@ -352,7 +356,7 @@ footer {
     footer {
       padding-left: 4rem;
       padding-right: 4rem; } }
-  @media only screen and (max-width: 40.5em) {
+  @media only screen and (max-width: 47.9375em) {
     footer {
       padding-top: 2rem;
       padding-left: 2rem;
@@ -361,7 +365,7 @@ footer {
 .main-container {
   width: 100%;
   margin-bottom: 58.5px; }
-  @media only screen and (max-width: 40.5em) {
+  @media only screen and (max-width: 47.9375em) {
     .main-container {
       display: flex;
       flex-direction: column;
@@ -373,7 +377,7 @@ footer {
     @media only screen and (max-width: 64.5em) {
       .main-container h3 {
         font-size: 24px !important; } }
-    @media only screen and (max-width: 40.5em) {
+    @media only screen and (max-width: 47.9375em) {
       .main-container h3 {
         font-size: 24px !important; } }
   .main-container p:not(:last-child) {
@@ -381,7 +385,7 @@ footer {
   @media only screen and (max-width: 64.5em) {
     .main-container p {
       font-size: 18px !important; } }
-  @media only screen and (max-width: 40.5em) {
+  @media only screen and (max-width: 47.9375em) {
     .main-container p {
       font-size: 18px !important; } }
 
@@ -389,7 +393,7 @@ footer {
   width: 100%;
   display: flex;
   justify-content: space-between; }
-  @media only screen and (max-width: 40.5em) {
+  @media only screen and (max-width: 47.9375em) {
     .sec-container {
       flex-direction: column;
       justify-content: center;
@@ -406,7 +410,7 @@ footer {
     color: #AAAAAA; }
     .sec-container div:nth-child(1) img {
       margin-right: 3rem; }
-      @media only screen and (max-width: 40.5em) {
+      @media only screen and (max-width: 47.9375em) {
         .sec-container div:nth-child(1) img {
           margin-right: 0rem;
           margin-bottom: 31.5px; } }
@@ -414,7 +418,7 @@ footer {
       font-size: 14px !important; }
       .sec-container div:nth-child(1) p:not(:last-child) {
         margin-right: 1rem; }
-      @media only screen and (max-width: 40.5em) {
+      @media only screen and (max-width: 47.9375em) {
         .sec-container div:nth-child(1) p {
           line-height: 18px !important; }
           .sec-container div:nth-child(1) p:last-child {
@@ -428,7 +432,7 @@ footer {
     @media only screen and (max-width: 64.5em) {
       .sec-container div:nth-child(1) {
         font-size: 14px !important; } }
-    @media only screen and (max-width: 40.5em) {
+    @media only screen and (max-width: 47.9375em) {
       .sec-container div:nth-child(1) {
         font-size: 14px !important;
         width: 100%;
@@ -449,7 +453,7 @@ footer {
   font-size: 18px;
   line-height: 150%;
   color: #FFFFFF;
-  transition: all .2s ease-out; }
+  transition: all .1s ease-out; }
   .btn span {
     margin-left: 1rem; }
   .btn:hover {
@@ -466,19 +470,26 @@ footer {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-  color: #AAAAAA; }
-  @media only screen and (max-width: 40.5em) {
+  color: #AAAAAA;
+  transition: all .1s ease-out; }
+  @media only screen and (max-width: 47.9375em) {
     .btn-footer {
       margin-bottom: 4rem; } }
+  .btn-footer:hover {
+    background: #333333; }
 
 .nav {
   height: 8rem; }
   @media only screen and (max-width: 64.5em) {
     .nav {
       height: 8rem; } }
-  @media only screen and (max-width: 40.5em) {
+  @media only screen and (max-width: 51.25em) {
     .nav {
       height: 7rem;
-      padding: 2rem; }
+      padding: 4rem; } }
+  @media only screen and (max-width: 51.25em) and (max-width: 47.9375em) {
+    .nav {
+      padding: 2rem; } }
+  @media only screen and (max-width: 51.25em) {
       .nav img {
         display: block !important; } }

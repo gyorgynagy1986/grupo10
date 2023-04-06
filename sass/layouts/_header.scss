@@ -23,7 +23,7 @@ header {
         @include respond (tablet) {
             left: 4rem;
         }
-        @include respond (phone) {
+        @include respond (SCtablet) {
            display: none;
     
         }
@@ -43,11 +43,19 @@ header {
     @include respond (phone) {
         background-position: top;
         background-attachment: fixed;
+        background-size: cover;
         width: 100%;
         min-height: 760px;
         display: flex;
         align-items: flex-end;
     }
+
+    @include respond (phone600) {
+        background-size:contain;
+    
+    }
+
+
 }
 
 

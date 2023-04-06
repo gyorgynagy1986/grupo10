@@ -5,9 +5,13 @@
         height: 8rem;
     }
 
-    @include respond (phone) {
+    @include respond (SCtablet) {
         height: 7rem;
-        padding: 2rem;
+        padding: 4rem;
+
+        @include respond (phone) {
+            padding: 2rem;
+        }
        
         img {
             display: block !important;
