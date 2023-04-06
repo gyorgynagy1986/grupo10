@@ -20,10 +20,7 @@ function handleMediaQueryChange(event) {
 
   if (event.matches) {
 
-  text.style.top = 0;
-
-  console.log(window.pageYOffset)
-    
+  text.style.top = 0;    
    
    window.addEventListener('scroll', function() {
        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -32,7 +29,7 @@ function handleMediaQueryChange(event) {
    
      });
   } else {
-    console.log('hello, where is the parralax ? :( ');
+  
   }
 
 }
