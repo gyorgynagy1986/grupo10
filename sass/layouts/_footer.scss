@@ -30,8 +30,8 @@ footer {
     }
 
 
-    h3 {
-
+    .company {
+        font-size: 24px !important;
         margin-bottom: 2rem;
 
         @include respond (tablet) {
